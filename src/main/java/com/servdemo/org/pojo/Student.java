@@ -1,6 +1,9 @@
 package com.servdemo.org.pojo;
 
+<<<<<<< HEAD
 import java.util.HashSet;
+=======
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -9,7 +12,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+<<<<<<< HEAD
 import javax.persistence.ManyToMany;
+=======
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -39,6 +45,7 @@ public class Student {
     
     private Set<Subject> subject;
     
+<<<<<<< HEAD
   
 	Set<Teacher> teacher;
     
@@ -65,6 +72,8 @@ public class Student {
 
 
 	  
+=======
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
     
     public Student(String firstName, String lastName, String section, Board board, Set<Subject> subject,
 			 Standard standard) {
@@ -79,20 +88,32 @@ public class Student {
 	}
     
 
+<<<<<<< HEAD
 	public Student(String firstName, String lastName, String section, Board board, Set<Subject> subject,
+=======
+	public Student(String firstName, String lastName, String section, Board board, Set<Subject> subject2,
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
 			Address address, Standard standard) {
 		
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.section = section;
 		this.board = board;
+<<<<<<< HEAD
 		this.subject = subject;
+=======
+		this.subject = subject2;
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
 		this.address = address;
 		this.standard = standard;
 	}
 
 
+<<<<<<< HEAD
 	@OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
+=======
+	@OneToMany(mappedBy = "subject",cascade = CascadeType.ALL)
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
     public Set<Subject> getSubject() {
 		return subject;
 	}
@@ -162,6 +183,17 @@ public class Student {
 		this.address = address;
 	}
 
+<<<<<<< HEAD
+=======
+	
+
+
+	public Student(String string, String string2, String string3, Board board2, Subject subject2, Address address2,
+			Standard standard2) {
+		// TODO Auto-generated constructor stub
+	}
+
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
 
 	@Id
 	@GeneratedValue
@@ -210,6 +242,7 @@ public class Student {
 	
 
 	
+<<<<<<< HEAD
 	
 
 	@Override
@@ -228,6 +261,12 @@ public class Student {
 		return result;
 		
 		
+=======
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", section=" + section
+				+ ", board=" + board + ", subject=" + subject + ", address=" + address + ", standard=" + standard + "]";
+>>>>>>> ee2a7a299e2e7975db90bae5d903efea74bfcb0e
 	}
 
 
